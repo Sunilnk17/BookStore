@@ -61,8 +61,7 @@ module.exports.updateBook = function (id,book,callback) {
 		author:book.author,
 		image_url:book.image_url,
 		buy_url:book.buy_url,
-		create_date:book.create_date
 	}
 
-	Genre.findOneAndUpdate(query,update, callback);
+	Book.findOneAndUpdate(query,update, callback);
 }
